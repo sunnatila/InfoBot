@@ -1,0 +1,256 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-29 14:38+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: company/models.py:8
+msgid "Umumiy ma'lumot"
+msgstr "Umumiy ma'lumot"
+
+#: company/models.py:9
+msgid "Tarix"
+msgstr "Tarix"
+
+#: company/models.py:10
+msgid "Missiya"
+msgstr "Missiya"
+
+#: company/models.py:11
+msgid "Kompaniyaning qarashlari"
+msgstr "Kompaniyaning qarashlari"
+
+#: company/models.py:12 company/models.py:57 company/models.py:88
+#: company/models.py:137
+msgid "Rasm"
+msgstr "Rasm"
+
+#: company/models.py:14 company/models.py:59 company/models.py:90
+#: company/models.py:118 company/models.py:139 company/models.py:167
+#: company/models.py:186 company/models.py:203
+msgid "Yaratilgan Vaqt"
+msgstr "Yaratilgan vaqt"
+
+#: company/models.py:15 company/models.py:60 company/models.py:91
+#: company/models.py:119 company/models.py:140 company/models.py:168
+#: company/models.py:187 company/models.py:204
+msgid "Ozgartirilgan vaqt"
+msgstr "O'zgartirilgan vaqt"
+
+#: company/models.py:23
+msgid "Kompaniyalar"
+msgstr "Kompaniyalar"
+
+#: company/models.py:24
+msgid "Kompaniya "
+msgstr "Kompaniya "
+
+#: company/models.py:40
+msgid "Servis xizmati"
+msgstr "Servis xizmati"
+
+#: company/models.py:41
+msgid "Mahsulot"
+msgstr "Mahsulot"
+
+#: company/models.py:49
+msgid "Servislar"
+msgstr "Servislar"
+
+#: company/models.py:50
+msgid "Servis "
+msgstr "Servis "
+
+#: company/models.py:55
+msgid "Sarlavha"
+msgstr "Sarlavha"
+
+#: company/models.py:56
+msgid "Batafsil ma'lumot"
+msgstr "Batafsil ma'lumot"
+
+#: company/models.py:68
+msgid "Yangiliklar"
+msgstr "Yangiliklar"
+
+#: company/models.py:69
+msgid "Yangilik "
+msgstr "Yangilik "
+
+#: company/models.py:84
+msgid "Moliyaviy ma'lumot"
+msgstr "Moliyaviy ma'lumot"
+
+#: company/models.py:85
+msgid "Hisobot"
+msgstr "Hisobot"
+
+#: company/models.py:86
+msgid "Kelajak rejalari"
+msgstr "Kelajak rejalari"
+
+#: company/models.py:87
+msgid "Aloqa ma'lumoti"
+msgstr "Aloqa ma'lumoti"
+
+#: company/models.py:99
+#, fuzzy
+#| msgid "Moliyaviy ma'lumot"
+msgid "Moliyaviy ma'lumotlar"
+msgstr "Moliyaviy ma'lumotlar"
+
+#: company/models.py:100
+#, fuzzy
+#| msgid "Moliyaviy ma'lumot"
+msgid "Moliyaviy ma'lumot haqida "
+msgstr "Moliyaviy ma'lumot "
+
+#: company/models.py:115 company/models.py:164
+msgid "To'liq ismingiz"
+msgstr "To'liq ismingiz"
+
+#: company/models.py:116 company/models.py:165
+msgid "Telefon raqam"
+msgstr "Telefon raqam"
+
+#: company/models.py:117 company/models.py:166
+msgid "Batafsil maslahat"
+msgstr "Batafsil maslahat"
+
+#: company/models.py:127
+msgid "Investorlar arizalari"
+msgstr "Investorlar arizalari"
+
+#: company/models.py:128 company/models.py:177
+msgid "Ariza "
+msgstr "Ariza "
+
+#: company/models.py:133
+msgid "Hamkorlik imkoniyatlari"
+msgstr "Hamkorlik imkoniyatlari"
+
+#: company/models.py:134
+msgid "Hamkorlik dasturlari"
+msgstr "Hamkorlik dasturlari"
+
+#: company/models.py:135
+msgid "Shartlar"
+msgstr "Shartlar"
+
+#: company/models.py:136
+msgid "Aloqa ma'lumotlari"
+msgstr "Aloqa ma'lumotlari"
+
+#: company/models.py:148
+#, fuzzy
+#| msgid "Hamkorlar arizalari"
+msgid "Hamkorlikning afzalliklari"
+msgstr "Hamkorlar afzalliklari"
+
+#: company/models.py:149
+#, fuzzy
+#| msgid "Hamkorlar arizalari"
+msgid "Hamkorlikning afzalliklarini "
+msgstr "Hamkorlar afzalliklarini "
+
+#: company/models.py:176
+msgid "Hamkorlar arizalari"
+msgstr "Hamkorlar arizalari"
+
+#: company/models.py:182
+#, fuzzy
+#| msgid "Kompaniyalar"
+msgid "Kompaniya manzillari"
+msgstr "Kompaniyalar"
+
+#: company/models.py:183
+#, fuzzy
+#| msgid "Telefon raqam"
+msgid "Telefon raqamlar"
+msgstr "Telefon raqam"
+
+#: company/models.py:184
+#, fuzzy
+#| msgid "Elektron manzil"
+msgid "Elektron pochta"
+msgstr "Elektron manzil"
+
+#: company/models.py:185
+msgid "Ijtimoiy tarmoqlar"
+msgstr "Ijtimoiy tarmoqlar"
+
+#: company/models.py:195
+msgid "Kontaktlar"
+msgstr "Kontaktlar"
+
+#: company/models.py:196
+msgid "Kontakt "
+msgstr "Kontakt "
+
+#: company/models.py:201
+msgid "Savol"
+msgstr "Savol"
+
+#: company/models.py:202
+msgid "Javob"
+msgstr "Javob"
+
+#: company/models.py:212
+msgid "Savolar"
+msgstr "Savollar"
+
+#: company/models.py:213
+msgid "Savol "
+msgstr "Savol "
+
+#: config/settings.py:126
+msgid "Uzbek"
+msgstr "Ozbecha"
+
+#: config/settings.py:127
+msgid "Russian"
+msgstr "Ruscha"
+
+#: users/models.py:6
+msgid "Foydalanuvchining tili"
+msgstr "Foydalanuvchining tili"
+
+#: users/models.py:7
+msgid "Foydalanuvchining tg id"
+msgstr "Foydalanuvchining tg id"
+
+#: users/models.py:15
+msgid "Telegram foydalanuvchilar"
+msgstr "Telegram foydalanuvchilar"
+
+#: users/models.py:16
+#, fuzzy
+#| msgid "Telegram foydalanuvchi "
+msgid "Telegram foydalanuvchi "
+msgstr "Telegram foydalanuvchi "
+
+#~ msgid "Investorlar"
+#~ msgstr "Investorlar"
+
+#~ msgid "Investor "
+#~ msgstr "Investor "
+
+#~ msgid "Hamkorlar"
+#~ msgstr "Hamkorlar"
+
+#~ msgid "Hamkor "
+#~ msgstr "Hamkor "
