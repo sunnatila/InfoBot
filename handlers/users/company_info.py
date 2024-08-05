@@ -50,5 +50,5 @@ async def send_company_info(msg: types.Message, state: FSMContext):
             'uz': "Kompaniya haqida ma'lumot topilmadi",
             'ru': "Информация о компании не найдена"
         }
-        await msg.answer(TEXTS[language[0]])
+        await msg.answer(TEXTS[language])
 

@@ -4,9 +4,10 @@ from aiogram.fsm.context import FSMContext
 from aiogram.filters.state import StateFilter
 from aiogram.types import CallbackQuery, ReplyKeyboardRemove
 
+from data.config import ADMINS
 from keyboards.default import create_invest_button, create_contact_button, create_menu_buttons, create_partners_buttons
 from keyboards.inline import create_back_button
-from loader import dp, db
+from loader import dp, db, bot
 
 buttons_uz = ["📈 Investorlar uchun bo'lim", "🏛 Moliyaviy ma'lumotlar"]
 buttons_ru = ["📈 Раздел для инвесторов", "🏛 Финансовая информация"]
@@ -90,6 +91,21 @@ async def get_advice(msg: types.Message, state: FSMContext):
     user_phone = user_info['phone']
     user_advice = msg.text
     await db.add_invest_user(user_fullname, user_phone, user_advice)
+    if language['lang'] == 'uz':
+        user_information = f"📃 Investorlik uchun ariza!\n\n"
+        user_information += f"👤 Investorning Ism-Familiyasi: {user_fullname}\n"
+        user_information += f"📞 Investorning telefon raqami: {user_phone}\n\n"
+        user_information += f"📝 Investor bo'lish uchun ba'tafsil ma'lumot: {user_advice}\n"
+        for admin in ADMINS:
+            await bot.send_message(admin, user_information)
+    else:
+        user_information = f"📃 Заявка на инвестиции!\n\n"
+        user_information += f"👤 Имя и фамилия инвестора: {user_fullname}\n"
+        user_information += f"📞 Номер телефона инвестора: {user_phone}\n\n"
+        user_information += f"📝 Дополнительная информация, чтобы стать инвестором: {user_advice}\n"
+        for admin in ADMINS:
+            await bot.send_message(admin, user_information)
+
     TEXTS = {
         'uz': 'Sizning arizangiz muvaffaqiyatli tarzda qabul qilindi.',
         'ru': 'Ваша заявка была успешно подана.'

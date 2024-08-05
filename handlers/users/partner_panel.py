@@ -4,9 +4,10 @@ from aiogram.fsm.context import FSMContext
 from aiogram.filters.state import StateFilter
 from aiogram.types import CallbackQuery, ReplyKeyboardRemove
 
+from data.config import ADMINS
 from keyboards.default import create_invest_button, create_contact_button, create_partners_buttons, create_menu_buttons
 from keyboards.inline import create_back_button
-from loader import dp, db
+from loader import dp, db, bot
 
 
 @dp.message(lambda msg: msg.text in ["🧾 Hamkorlar uchun bo'lim", "🧾 Раздел для партнеров"])
@@ -109,6 +110,20 @@ async def get_partner_advice(msg: types.Message, state: FSMContext):
     user_phone = user_info['phone']
     user_advice = msg.text
     await db.add_partner(user_fullname, user_phone, user_advice)
+    if lang['lang'] == 'uz':
+        user_information = f"📄 Hamkorlik uchun ariza!\n\n"
+        user_information += f"👤 Hamkorning Ism-Familiyasi: {user_fullname}\n"
+        user_information += f"📱 Hamkorning Telefon raqami: {user_phone}\n"
+        user_information += f"📝 Hamkorlik uchun ba'tafsil ma'lumot: {user_advice}"
+        for admin in ADMINS:
+            await bot.send_message(admin, user_information)
+    else:
+        user_information = f"📄 Заявка на партнерство!\n\n"
+        user_information += f"👤 Имя и фамилия партнера: {user_fullname}\n"
+        user_information += f"📱 Номер телефона партнера: {user_phone}\n"
+        user_information += f"📝 Дополнительная информация для сотрудничества: {user_advice}"
+        for admin in ADMINS:
+            await bot.send_message(admin, user_information)
     TEXTS = {
         'uz': "Arizangiz muvaffaqiyatli tarzda qabul qilindi.",
         'ru': "Ваша заявка была успешно подана."
